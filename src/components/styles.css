@@ -1,0 +1,131 @@
+.board {
+  display: flex;
+  flex-direction: column; /* Stack controls and columns vertically */
+  align-items: center;
+  padding: 20px;
+}
+
+.board button:hover {
+  background-color: #f7f8f7; /* Darker green on hover */
+}
+
+.controls {
+  position: absolute; /* Position it absolutely */
+  top: 20px; /* Space from the top */
+  left: 20px; /* Space from the left */
+  z-index: 10; /* Ensure it's on top of other elements */
+}
+
+.group-sort-container {
+  margin-top: 10px; /* Space above group/sort controls */
+  display: flex; /* Flex container to align group by and sort by side by side */
+  gap: 15px; /* Space between group by and sort by */
+}
+
+.group-sort {
+  display: flex;
+  flex-direction: column; /* Stack label and select vertically */
+}
+
+.group-sort label {
+  margin-bottom: 5px; /* Space between label and select */
+}
+
+button {
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.columns {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Evenly space out the columns */
+  width: 100%; /* Full width of the parent container */
+}
+
+.column {
+  padding: 10px; /* Add padding for spacing */
+  margin: 0 10px; /* Margin between columns */
+  width: 30%; /* Adjust width as needed */
+  flex-grow: 1; /* Allow columns to grow equally */
+  border-radius: 0px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.column h2 {
+  text-align: left; /* Align the column titles to the left */
+  margin: 0; /* Remove margin around the titles */
+}
+
+.card {
+  background-color: #ffffff; /* White background for the card */
+  border: 1px solid #ddd; /* Light border around the card */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding inside the card */
+  margin: 10px 0; /* Margin between cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  height: 50px; /* Fixed height for all cards */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align items at the top */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.card {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.avatar-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 0.5em; /* Smaller font size for ID */
+  color: gray; /* Color for ID */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+.card h4 {
+  margin: 5px 0; /* Margin for the title */
+  font-size: 0.6em; /* Smaller font size for the title */
+  flex-grow: 1; /* Allow title to take available space */
+  overflow: hidden; /* Prevent overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+  white-space: normal; /* Allow wrapping */
+  max-height: 40px; /* Limit height to accommodate two lines */
+}
+
+.card p {
+  margin: 0; /* Remove margin for feature request */
+  font-size: 0.5em; /* Smaller font size for feature request */
+  color: gray; /* Color for feature request */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px; /* Set desired width */
+  height: 40px; /* Set desired height */
+  border-radius: 50%; /* Make it round */
+  margin-right: 8px; /* Add some space between the image and name */
+}
+
+.status-icon {
+  width: 20px;  /* Adjust the size as necessary */
+  height: 20px; /* Adjust the size as necessary */
+  margin-top: 5px; /* Add some spacing */
+}
